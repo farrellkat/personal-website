@@ -1,3 +1,4 @@
+@import "./keyframes.css";
 /* Custom Stylesheet */
 /**
  * Use this file to override Materialize files so you can update
@@ -15,16 +16,32 @@ p {
   line-height: 2rem;
 }
 
+.material-icons {
+  color: white;
+}
+.page-icons {
+  color: black;
+}
+
 .sidenav-trigger {
-  color: #26a69a;
+  color: #000000;
 }
 .parallax img {
   max-height: auto; /* or a little bit higher */
   width: 100%;
 }
 
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity: 1;
+}
+
 .parallax-container {
-  min-height: 380px;
+  min-height: 100vh;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -32,6 +49,20 @@ p {
   .parallax-container .section {
     width: 100%;
   }
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
   .nameHeader {
     text-shadow: -1px 1px 5px #ffffff;
@@ -49,6 +80,10 @@ p {
   #index-banner .section {
     top: 10%;
   }
+  .parallax-container {
+    min-height: 100vh;
+  }
+
 }
 
 @media only screen and (max-width : 600px) {
@@ -63,7 +98,25 @@ p {
 .icon-block .material-icons {
   font-size: inherit;
 }
+.parallax-container {
+  min-height: 380px;
+}
 
 footer.page-footer {
   margin: 0;
+}
+@media only screen and (min-width : 992px) {
+.parallax-container {
+  min-height: 110vh;
+}
+}
+@media only screen and (min-width : 800px) {
+  .composerContainer {
+    min-height: 35em;
+  }
+}
+@media only screen and (max-width : 450px) {
+  .composerContainer {
+    min-height: 17em;
+  }
 }

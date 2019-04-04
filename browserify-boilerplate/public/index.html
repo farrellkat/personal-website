@@ -9,51 +9,48 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <nav> <!-- navbar content here  --> </nav>
-
-    <ul id="slide-out" class="sidenav">
-      <li><div class="user-view">
-        <div class="background">
-          <img src="images/office.jpg">
-        </div>
-        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-        <a href="#name"><span class="white-text name">John Doe</span></a>
-        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-      </div></li>
-      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-      <li><a href="#!">Second Link</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="subheader">Subheader</a></li>
-      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  <div class="navbar-fixed">
+  <nav>
+            <div class="nav-wrapper" style="background-color:black;">
+              <a href="#index-banner" class="brand-logo white-text">James Farrell</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+      <li><a href="#aboutMe"><i class="material-icons" style="pointer-events:none;">person_pin</i></a></li>
+      <li><a href="#coderSection"><i class="material-icons" style="pointer-events:none;">computer</i></a></li>
+      <li><a href="#producerSection"><i class="material-icons" style="pointer-events:none;">volume_up</i></a></li>
+      <li><a href="#composerSection"><i class="material-icons" style="pointer-events:none;">create</i></a></li>
+      <li><a href="#contact"><i class="material-icons" style="pointer-events:none;">email</i></a></li>
     </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  </div>
+  </nav>
+</div>
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
+  <ul class="sidenav" id="mobile-demo">
+      <li><a href="#aboutMe"><i class="material-icons">person_pin</i>About Me</a></li>
+      <li><a href="#coderSection"><i class="material-icons">computer</i>Coder</a></li>
+      <li><a href="#producerSection"><i class="material-icons">volume_up</i>Producer</a></li>
+      <li><a href="#composerSection"><i class="material-icons">create</i>Composer</a></li>
+      <li><a href="#contact"><i class="material-icons">email</i>Contact Me</a></li>
+    </ul>
+
+    <div id="index-banner" class="parallax-container scrollspy">
+      <div class="parallax"><img style="min-height: auto" src="./img/James+Farrell14297.jpg" alt="james farrell"/></div>
+      <div class="section no-pad-bot">
       <br><br>
-      <div class="container">
-        <h1 class="header col offset-l8 blue-grey-text text-darken-3 nameHeader">James Farrell</h1>
-      <div class="row">
-        <div>
-            <h5 class="header col offset-l8 blue-grey-text text-darken-3">Software Developer / Music Producer</h5>
-          </div>
-        </div>
-        <br><br>
-
-      </div>
     </div>
-    <div class="parallax studio"><img src="./img/James+Farrell14297.jpg" alt="james farrell"/></div>
   </div>
 
 
-  <div class="container">
+  <div class="container section valign-wrapper" data-aos="fade-right" data-aos-duration="1200" style="height: 100vh">
     <div class="section">
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="container">
+        <div class="container scrollspy" id="aboutMe">
           <h3 class="center">About Me</h3>
         </div>
         <p>Having spent the last 11 years of my life as a musician in Music City, I've learned what it takes to work hard for your art.
@@ -63,13 +60,16 @@
     </div>
   </div>
 </div>
-  <div class="container">
+  <div class="container" data-aos="fade-down"
+  data-aos-easing="linear"
+  data-aos-duration="1000">
     <div class="section">
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="container">
-          <h2 class="center black-text">Coder</h2>
+          <div class="col s12 center">
+          <h3 class="center black-text">Coder</h3>
+          <i class="material-icons page-icons">computer</i>
         </div>
 
     </div>
@@ -77,18 +77,13 @@
 </div>
 
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <!-- <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A single-page web application built with react.</h5>
-        </div>
-      </div> -->
-    </div>
-    <div class="parallax"><img src="./img/chewsy-login.png" alt="Photo by James Stamler on Unsplash"></div>
+  <div class="parallax-container valign-wrapper section scrollspy" id="coderSection" >
+    <!-- <div class="section no-pad-bot">
+    </div> -->
+    <div class="parallax"><img style="min-width: 604px" src="./img/chewsy-login.png" alt="Photo by James Stamler on Unsplash"></div>
   </div>
 
-  <div class="container">
+  <div class="container valign-wrapper" style="height: 100vh;" data-aos="fade-left" data-aos-duration="1200">
     <div class="section">
 
       <div class="row">
@@ -106,82 +101,74 @@
 
     </div>
   </div>
-      <div class="row">
+      <div class="row section" data-aos="fade-up"
+      data-aos-duration="1500">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h3>Producer</h3>
+          <h3 >Producer</h3>
+          <i class="material-icons page-icons">volume_up</i>
           <!-- <img src="img/questPoster.jpg" style="width: 150px " /> -->
         </div>
       </div>
     </div>
   </div>
 
-  <div class="parallax-container valign-wrapper" style="justify-content: center;">
-    <iframe src="https://open.spotify.com/embed/user/farrellkat/playlist/1x8UyofXRDLX72CPI93GHp"
-      width="80%"
-      height="300px"
-      frameborder="0"
-      allowtransparency="true"
-      allow="encrypted-media"></iframe>
-    <div class="section">
+  <div class="scrollspy" id="producerSection" style="justify-content: center;">
+    <div class="section" style="top: 0" data-aos="fade-up"
+    data-aos-duration="1000">
       <div class="container">
         <div class="row center">
+            <iframe src="https://open.spotify.com/embed/user/farrellkat/playlist/1x8UyofXRDLX72CPI93GHp"
+              width="100%"
+              height="650px"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"></iframe>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="./img/BlueMoog.jpeg" alt="Unsplashed background img 3"></div>
+    <!-- <div class="parallax"><img src="./img/BlueMoog.jpeg" alt="Unsplashed background img 3"></div> -->
   </div>
 
-  <div class="row">
+  <div class="row section" data-aos="zoom-out" data-aos-duration="500" data-aos-delay="1400">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h3>Composer</h3>
+          <h3 >Composer</h3>
+          <i class="material-icons page-icons">create</i>
           <!-- <img src="img/questPoster.jpg" style="width: 150px " /> -->
         </div>
       </div>
     </div>
   </div>
 
-  <div class="parallax-container valign-wrapper">
-    <iframe src="https://player.vimeo.com/video/318091548"
-    width="100%"
-    height="auto"
-    frameborder="0"
-    allowfullscreen></iframe>
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
+  <!-- <div class="parallax-container valign-wrapper scrollspy" id="composerSection"> -->
+    <div class="section no-pad-bot" style="top:0" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+      <div class="container" >
+        <div class="row center video-responsive">
+            <iframe src="https://player.vimeo.com/video/318091548"
+            width="100%"
+            height="auto"
+            frameborder="0"
+            allowfullscreen></iframe>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="./img/valentino-funghi-146040-unsplash.jpg"/></div>
-  </div>
+    <!-- <div class="parallax"><img src="./img/valentino-funghi-146040-unsplash.jpg"/></div> -->
+  <!-- </div> -->
 
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+        <div class="col">
+          <h5 class="white-text section scrollspy" id="contact">Let's connect</h5>
+          <hr/>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text valign-wrapper" href="mailto:jamesfarrellmusic@gmail.com" target="_top""><i class="material-icons">mail</i>&nbsp;jamesfarrellmusic@gmail.com</a></li>
+            <li><a class="white-text valign-wrapper"><i class="material-icons">phone</i>&nbsp;(312) 576-5666</a></li>
+            <li><a class="white-text valign-wrapper" target="_blank" href="https://www.linkedin.com/in/james-w-farrell/"><i class="material-icons fab fa-linkedin"></i>&nbsp;@james-w-farrell</a></li>
+            <li><a class="white-text valign-wrapper" target="_blank" href="https://www.twitter.com/jamesfarrell"><i class="material-icons fab fa-twitter"></i>&nbsp;@jamesfarrell</a></li>
           </ul>
         </div>
       </div>
@@ -199,6 +186,10 @@
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({useClassNames: true});
+  </script>
 
   </body>
 </html>
